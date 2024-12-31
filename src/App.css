@@ -1,0 +1,87 @@
+body {
+    background-color: #9860c393;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the app container */
+
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 10px 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    background-color: #c8ced5;
+    color: rgb(12, 12, 12);
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 8px 6px 7px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #b846d8;
+    color: white;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .ProseMirror {
+    width: 900px; /* Fixed width */
+    height: 500px; /* Fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Padding inside the editor */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the editor */
+    resize: none; /* Prevent resizing */
+  }
+  
+  @media (max-width: 1024px) {
+    .ProseMirror {
+      width: 80%; /* Adjust the width for medium screens */
+      height: 450px; /* Adjust height for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ProseMirror {
+      width: 90%; /* Adjust width for smaller screens */
+      height: 400px; /* Adjust height for tablets */
+      font-size: 14px; /* Smaller font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ProseMirror {
+      width: 100%; /* Full width for mobile devices */
+      height: 350px; /* Adjust height for mobile screens */
+      padding: 15px; /* Less padding for small screens */
+      font-size: 12px; /* Smaller font size for mobile */
+    }
+  }
+  
